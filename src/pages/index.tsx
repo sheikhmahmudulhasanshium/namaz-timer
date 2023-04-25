@@ -14,7 +14,7 @@ export default function index()  {
            <div className='flex flex-col items-center justify-center py-2 my-6'>
            <h1>بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</h1>
                 <h2 className='p-2 text-6xl'>Wakt</h2> 
-                <div className='flex gap-4 p-4 py-8 text-base bg-opacity-50 bg-slate-500 hover:text-green-500 rounded-xl'>
+                <div className='flex gap-4 p-4 py-8 text-base bg-opacity-50 bg-slate-500 hover:dark:text-green-500 hover:text-green-900 rounded-xl'>
                   {/**https://timeapi.io/swagger/index.html */}
                     <h1>Hour:   1</h1>
                     <h1>Minute:  1</h1>
@@ -22,14 +22,14 @@ export default function index()  {
                   
                 </div>
  
-                <div className='flex gap-4 py-4 text-base hover:dark:text-green-500'>
+                <div className='flex gap-4 py-4 text-base hover:dark:text-green-500 hover:text-green-950'>
                   {/**https://timeapi.io/swagger/index.html */}
                     <h1>Day:   1</h1>
                     <h1>Month:  1</h1>
                     <h1>Year:   1</h1>
                   
                 </div>
-                <div className='flex gap-4 py-4 text-base hover:dark:text-green-500'>
+                <div className='flex gap-4 py-4 text-base hover:dark:text-green-500 hover:text-green-950'>
                   {/**https://timeapi.io/swagger/index.html */}
                     <h1>Day Of Week:   1</h1>
                     <h1>Timezone:  1</h1>
