@@ -37,14 +37,14 @@ const Clock = () => {
     return (
         <div className="font-orbitron py-6 mx-6">
             <div className="flex justify-center space-x-4 py-5 text-5xl font-bold">
-                <p className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">{day}</p>
+                <p className="bg-gradient-to-r from-blue-500 to-purple-500 dark:from-blue-950 dark:to-green-500 text-transparent bg-clip-text">{day}</p>
             </div>
             <div className="flex justify-center space-x-4 py-5 text-3xl font-bold">
-                <p className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">{dayOfMonth}</p>
-                <p className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">{month}</p>
-                <p className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">{year}</p>
+                <p className="bg-gradient-to-r from-blue-500 to-purple-500 dark:from-blue-950 dark:to-green-500 text-transparent bg-clip-text">{dayOfMonth}</p>
+                <p className="bg-gradient-to-r from-blue-500 to-purple-500 dark:from-blue-950 dark:to-green-500 text-transparent bg-clip-text">{month}</p>
+                <p className="bg-gradient-to-r from-blue-500 to-purple-500 dark:from-blue-950 dark:to-green-500 text-transparent bg-clip-text">{year}</p>
             </div>
-            <div className="bg-black text-slate-400 flex p-4 rounded-xl space-x-4 justify-center shadow-lg w-full">
+            <div className="bg-black text-green-400 flex p-4 rounded-xl space-x-4 justify-center shadow-lg w-full">
                 <div className="flex flex-col items-center justify-center w-16">
                     <p className="text-3xl font-digital">{hours.toString().padStart(2, '0')}</p>
                 </div>

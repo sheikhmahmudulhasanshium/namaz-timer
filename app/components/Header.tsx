@@ -8,7 +8,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
     return (
-        <div className="flex justify-between items-center py-6 font-semibold font-sans bg-cyan-950 text-white italic w-full mb-12">
+        <div className="flex justify-between items-center py-6 font-semibold font-sans bg-cyan-950 text-white italic w-full ">
             <div className="flex items-center">
                 <button 
                     className="text-2xl p-2 focus:outline-none"
