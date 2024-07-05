@@ -1,4 +1,5 @@
 import { FaTimes } from 'react-icons/fa';
+import ModeToggle from './mode-toggle';
 
 interface SidebarProps {
     isOpen: boolean;
@@ -8,7 +9,7 @@ interface SidebarProps {
 const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
     return (
         <div 
-            className={`flex flex-col bg-slate-200 justify-between items-center py-8 px-6 shadow-lg fixed top-0 left-0 h-full transition-transform duration-300 ${
+            className={`flex flex-col bg-slate-200 dark:bg-slate-700 justify-between items-center py-8 px-6 shadow-lg fixed top-0 left-0 h-full transition-transform duration-300 ${
                 isOpen ? 'translate-x-0' : '-translate-x-full'
             }`}
         >
@@ -29,7 +30,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
                 ))}
             </div>
             <button>
-                Light/Dark
+                <ModeToggle/>
             </button>
         </div>
     );
