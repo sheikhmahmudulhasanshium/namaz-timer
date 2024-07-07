@@ -32,7 +32,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
 
     return (
         <div
-            className={`flex flex-col bg-slate-200 dark:bg-slate-700 justify-between items-center py-8 px-6 shadow-lg fixed top-0 left-0 h-full transition-transform duration-300 ${
+            className={`flex flex-col bg-slate-200 dark:bg-slate-700 justify-between items-center py-8 px-6 shadow-lg fixed top-0 left-0 h-full transition-transform duration-300 z-10 ${
                 isOpen ? 'translate-x-0' : '-translate-x-full'
             }`}
         >

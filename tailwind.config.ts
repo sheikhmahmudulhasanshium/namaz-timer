@@ -10,7 +10,9 @@ const config: Config = {
   theme: {
     fontFamily: {
       'orbitron': ['Orbitron', 'sans-serif'], 
-      'digital': ['VT323', 'monospace'], // Corrected this line
+      'digital': ['VT323', 'monospace'],
+      'kaushan': ['Kaushan Script'],
+
     },
     extend: {
       backgroundImage: {

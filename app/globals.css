@@ -2,16 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Ensure full height and width */
 html,
 body,
 :root {
   height: 100%;
   width: 100%;
- 
 }
-@layer base {
-  @font-face {
-    font-family: 'Orbitron','Digital';
-    font-weight: 400;
-   }
+
+/* Global body styles */
+body {
+  font-family: 'Orbitron', 'Digital', 'Kaushan', sans-serif; /* Define your custom fonts */
+  width: 100%;
+  
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+::-webkit-scrollbar-thumb{
+  background-image: linear-gradient(to right bottom, #00ffff, #96aaec);
+}
+::-webkit-scrollbar{
+  width:10px;
+  height:0px;  
 }

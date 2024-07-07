@@ -32,6 +32,8 @@ const RootLayout = ({
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         {/* Added missing closing tag for link */}
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"/>
+
       </head>
       
       <body className={font.className}>
