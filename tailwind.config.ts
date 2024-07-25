@@ -18,7 +18,11 @@ const config: Config = {
       backgroundImage: {
         'darkImage': "url('../public/mosque-2.jpg')",
         'lightImage': "url('../public/mosque-1.jpg')",
-
+        'darkLogo' : "url('../public/logo-dark.png')",
+        'lightLogo' : "url('../public/logo.png')",
+        'ball' : "url('../public/ball.png')",
+        'ball-2' : "url('../public/ball2.png')",
+        
       },
     },
   },

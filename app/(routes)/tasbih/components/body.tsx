@@ -28,12 +28,12 @@ const Counter = () => {
         if (newSelectedCount <= 0) {
             reset();
         } else {
+            reset()
             setSelectedCount(newSelectedCount);
         }
     }
-
     return (
-        <div className="border-cyan-950 border bg-gray-700 p-6 rounded-3xl flex flex-col justify-center items-center space-y-6 bg-opacity-50 shadow-2xl shadow-gray-200">
+        <div className="border-cyan-950 border bg-gray-700 p-6 rounded-3xl flex flex-col justify-center items-center space-y-6 bg-opacity-50 shadow-2xl shadow-gray-200 z-20 ">
             <p className="text-4xl font-thin text-white">Tasbih</p>
             <div className="my-4">
                 <p className="text-8xl font-digital font-bold text-green-500">{count}</p>
@@ -53,12 +53,12 @@ const Counter = () => {
                 </button>
             </div>
             <div className="flex flex-col items-center space-y-4">
-                <p className="text-white">How many you want to start with?</p>
+                <p className="text-white">How many you want to start with from?</p>
                 <div className="flex justify-center items-center gap-4">
                     {suggestionCounts.map((item) => (
                         <button
                             key={item}
-                            onClick={() => updateSelectedCount(item)}
+                            onClick={() => updateSelectedCount(item) }
                             className="rounded-full w-10 h-10 bg-slate-900 hover:bg-slate-800 text-white flex items-center justify-center"
                         >
                             {item}
@@ -66,6 +66,7 @@ const Counter = () => {
                     ))}
                 </div>
             </div>
+            
         </div>
     );
 };

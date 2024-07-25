@@ -2,25 +2,23 @@
 import Header from "@/app/components/Header";
 import Sidebar from "@/app/components/Sidebar";
 import { useState } from "react";
-import Counter from "./components/body";
-import TasbihAnimation from "./components/tasbih"
-const Tasbih = () => {
+import Body from "./components/Body";
+
+const NamazTime = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
     const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
     };
-
     return ( 
-        <div className="flex justify-between items-center flex-col min-w-max">
+        <div className="flex justify-between  flex-col min-w-max h-screen">
             <Header toggleSidebar={toggleSidebar} />
             <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
-            <div className='bg-cover bg-center w-full  dark:bg-darkImage bg-lightImage h-screen flex justify-center items-center'>
-                <Counter />
+            <div className='bg-cover bg-center w-full  dark:bg-darkImage bg-lightImage  flex '>
+                <div className="justify-center items-center flex w-full overflow-y-scroll mt-8 sm:ml-12 ml-12 md:ml-0 lg:ml-0"><Body/></div>
             </div>
-            <TasbihAnimation/>
         </div>
      );
 }
  
-export default Tasbih;
+export default NamazTime;

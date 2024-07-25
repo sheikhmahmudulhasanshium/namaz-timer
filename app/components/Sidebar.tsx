@@ -12,7 +12,7 @@ interface SidebarProps {
 const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
     const router = useRouter();
     const [isMounted, setIsMounted] = useState(false);
-    const optionList = ['Home', 'Qiblah Compass', 'Tasbih', 'Namaz Time', 'Asmaul Husna', 'Quran', 'Help'];
+    const optionList = ['Home','Sahri Iftar', 'Quran', 'Tasbih', 'Namaz Time', 'Asmaul Husna', 'Qiblah Compass', 'Help'];
 
     useEffect(() => {
         setIsMounted(true);
